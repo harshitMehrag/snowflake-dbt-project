@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_daily_revenue
+    columns:
+      - name: TOTAL_REVENUE
+        tests:
+          - not_null
+
+  - name: mart_high_value_risk
+    columns:
+      - name: CUSTOMER_ID
+        tests:
+          - unique
+          - not_null

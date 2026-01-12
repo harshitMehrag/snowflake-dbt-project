@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: snowflake_raw
+    database: PORTFOLIO_DB
+    schema: RAW
+    tables:
+      - name: SALES_CLEAN
+      - name: CUSTOMER_CHURN_DATA
+      - name: REVIEWS_ANALYZED
